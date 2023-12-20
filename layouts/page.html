@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<section class="wrapper style1">
+    <div class="container">
+        <div id="content">
+
+            <!-- Content -->
+
+                <article>
+                    <header>
+                        <h2>{{ title }}</h2>
+                        <p>{{ subtitle }}</p>
+                    </header>
+
+                    <span class="image featured" style="height:10em;  background-image:url('{{ feature_image }}'); height: 200px; background-position: center;"/>&nbsp;</span>
+
+                    {% block page_content %}{% endblock %}
+
+                </article>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
