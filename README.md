@@ -4,6 +4,21 @@ This is the source for the [SiPS site](https://software-in-polar-science.github.
 
 Built by hand, using open source software.
 
+## Usage
+
+This site is built using Jinja templates into the `_site` directory, upon which it's 
+deployed statically using GitHub pages.
+
+To develop locally, you want to have a working knowledge of HTML, CSS and Python w/Jinja. 
+Install a development environment using 
+
+```
+python -m venv venv
+pip install -r requirements.txt
+```
+
+Then run `make all` to regenerate `_site`, check it in your local browser, then upload.
+
 ## Imagery credits
 
 "Antarctica Visualization Wallpaper" by sjrankin is marked with Public Domain Mark 1.0.
